@@ -10,11 +10,13 @@ view: user_order_facts {
   #Créer des dimensions pour les champs de la table dérivée
   dimension: utilisateur {
     primary_key: yes
+    hidden: yes
     type: number
     sql: ${TABLE}.utilisateur ;;
   }
 
   dimension: lifetime_order {
+    label: "Nombre d’items commandés"
     type: number
     sql: ${TABLE}.lifetime_orders ;;
   }

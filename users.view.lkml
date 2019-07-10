@@ -12,6 +12,11 @@ view: users {
     sql: ${TABLE}."AGE" ;;
   }
 
+  dimension: majeur {   # dimension qui indique si l’utilisateur est majeur ou non
+    type: yesno     # boolean (il y a aussi « number »,  « time » …)
+    sql: ${age} >= 18 ;;        # condition pour que le booléen vaut « yes »
+  }
+
   dimension: city {
     type: string
     sql: ${TABLE}."CITY" ;;
@@ -57,6 +62,11 @@ view: users {
     sql: ${TABLE}."LAST_NAME" ;;
   }
 
+  dimension: name {   # dimension concaténation du prénom et du nom
+    label : "Nom"
+    sql: CONCAT(${first_name}, ‘ ‘, ${last_name}) ;;
+  }
+
   dimension: latitude {
     type: number
     sql: ${TABLE}."LATITUDE" ;;
@@ -84,16 +94,7 @@ view: users {
 
   measure: count {
     type: count
-    drill_fields: [id, first_name, last_name, events.count, order_items.count]
-  }
-
-  dimension: majeur {   # indique si l’utilisateur est majeur ou non
-    type: yesno     # boolean (il y a aussi « number »,  « time » …)
-    sql: ${age} >= 18 ;;         # condition pour que boolean=yes
-  }
-
-  dimension : name {    # concatène le prénom et le nom de l’utilisateur
-    sql: CONCAT(${first_name}, ‘ ‘, ${last_name}) ;;
+    drill_fields: [id, first_name, last_name]
   }
 
 }

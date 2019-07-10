@@ -92,34 +92,13 @@ view: order_items {
 
   measure: count {
     type: count
-    drill_fields: [detail*]
   }
 
-  measure: prixVenteTotal {
-    hidden: yes     # ce champ ne sera pas utilisable dans l’Explore
-    type: sum      # fonction à appliquer
+  measure: prix_vente_total {
+    hidden: yes     # ce champ ne sera pas utilisable dans l’Explore (ne pourra pas être utilisé dans une visualisation)
+    type: sum     # fonction à appliquer
     sql: ${sale_price} ;;     # mesure ou dimension sur laquelle appliquer la fonction
-    drill_fields: [detail*]     # champs qui s'afficheront si on clique sur l'élément prixVenteTotal dans le Dashboard
     value_format_name: usd  # résultat en dollar US
   }
 
-  measure: ventesParUtilisateur {
-    type: number
-    sql: ${prixVenteTotal}/NULLIF(${users.count},0)} ;;    # calcul, résultat null si user.count=0
-    drill_fields: [user.id, users.nom]            # champs qui s'affichent si on clique sur le champ ventesParUtilisateur dans le Dashboard
-    value_format_name: usd   # résultat en en euros
-  }
-
-
-  # ----- Sets of fields for drilling ------
-  set: detail {
-    fields: [
-      id,
-      users.id,
-      users.first_name,
-      users.last_name,
-      inventory_items.id,
-      inventory_items.product_name
-    ]
-  }
 }
