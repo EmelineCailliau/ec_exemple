@@ -48,4 +48,6 @@ Liste non exhaustive des points forts et des points faibles de Looker :
 <br/>
 
 
-![GitHub Logo](images/Rapport.PNG)
+![GitHub Logo](Images/Rapport.PNG)
+
+<img src='Images/Rapport.PNG'/>
