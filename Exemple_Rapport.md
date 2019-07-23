@@ -37,7 +37,7 @@ Liste non exhaustive des points forts et des points faibles de Looker :
   </ul>
  </td> </tr>
   <tr> <td> Le <b> self-service </b> : La création, modification et exploration des visualisations est simple donc les utilisateurs métiers peuvent s’en servir sans l’aide d’un analyste. De plus, la couche de modélisation de Looker (lookML) garantie la cohérence des analyses. </td> <td> Il y a <b> moins de graphiques et moins d’options </b> que sur d’autres outils (comme Tableau). On remarque entre autres qu’on ne peut pas représenter les données sur une carte lorsqu’on travaille sur les régions françaises, les villes… Il est seulement possible de faire des cartes pour les pays, les états, comtés et zip-code des Etats-Unis, les codes postaux d’Angleterre ainsi que les coordonnées GPS. Si on veut vraiment travailler sur les régions par exemple, il faut créer ou télécharger un fichier de données spatiales au format TopoJSON: https://docs.looker.com/reference/model-params/map_layer.  </td> </tr>
-  <tr> <td> On peut <b> explorer les données </b> (naviguer, zoomer) de manière assez complète contrairement aux outils habituels. </td> <td>  </td> </tr>
+  <tr> <td> On peut <b> explorer les données </b> (naviguer, zoomer) de manière assez complète contrairement aux outils habituels. </td> <td> Il est impossible de modifier les infobulles. </td> </tr>
   <tr> <td> On peut <b> limiter l’accès aux données et les rôles </b> des utilisateurs. </td> <td>  </td> </tr>
   <tr> <td> On peut partager les liens de contenus (graphique, Dashboard…) avec d’autres utilisateurs ainsi que <b> planifier l’envoi </b> (ponctuel ou régulier) de ces contenus par mail. </td> <td>  </td> </tr>
   <tr> <td> Looker <b> interroge directement la base de données </b>  à chaque requête sans jamais importer/copier les données. </td> <td>  </td> </tr>
@@ -48,6 +48,4 @@ Liste non exhaustive des points forts et des points faibles de Looker :
 <br/>
 
 
-![GitHub Logo](Images/Rapport.PNG)
-
-<img src='Images/Rapport.PNG'/>
+<img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/Rapport.PNG"/>
