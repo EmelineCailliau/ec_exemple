@@ -20,12 +20,14 @@ view: users {
   dimension: city {
     type: string
     sql: ${TABLE}."CITY" ;;
+    group_label: "Lieu"
   }
 
   dimension: country {
     type: string
     map_layer_name: countries
     sql: ${TABLE}."COUNTRY" ;;
+    group_label: "Lieu"
   }
 
   dimension_group: created {
@@ -77,9 +79,23 @@ view: users {
     sql: ${TABLE}."LONGITUDE" ;;
   }
 
+  dimension: location {
+    type: location
+    sql_latitude: ${TABLE}.latitude ;;
+    sql_longitude: ${TABLE}.longitude ;;
+  }
+
+  dimension: approx_location {
+    type: location
+    drill_fields: [location]
+    sql_latitude: round(${TABLE}.latitude,1) ;;
+    sql_longitude: round(${TABLE}.longitude,1) ;;
+  }
+
   dimension: state {
     type: string
     sql: ${TABLE}."STATE" ;;
+    group_label: "Lieu"
   }
 
   dimension: traffic_source {
@@ -90,6 +106,7 @@ view: users {
   dimension: zip {
     type: zipcode
     sql: ${TABLE}."ZIP" ;;
+    group_label: "Lieu"
   }
 
   measure: count {
