@@ -95,7 +95,6 @@ view: order_items {
   }
 
   measure: prix_vente_total {
-    hidden: yes     # ce champ ne sera pas utilisable dans l’Explore (ne pourra pas être utilisé dans une visualisation)
     type: sum     # fonction à appliquer
     sql: ${sale_price} ;;     # mesure ou dimension sur laquelle appliquer la fonction
     value_format_name: usd  # résultat en dollar US
