@@ -94,6 +94,7 @@ view: users {
 
   dimension: state {
     type: string
+    map_layer_name: us_states
     sql: ${TABLE}."STATE" ;;
     group_label: "Lieu"
   }
@@ -105,6 +106,7 @@ view: users {
 
   dimension: zip {
     type: zipcode
+    map_layer_name: us_zipcode_tabulation_areas
     sql: ${TABLE}."ZIP" ;;
     group_label: "Lieu"
   }
