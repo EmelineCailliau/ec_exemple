@@ -681,7 +681,7 @@ Pour cela, on peut utiliser le paramètre « link » : <a href="https://docs.Loo
 <p> Un exemple de lien vers un dashboard est présent dans la vue « 02_users » du projet « welcome to Looker » pour la dimension « email » (ou encore dans la vue « 04_product » pour la dimension « brand ») : </p>
 <p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex56.png"/> </p>
 <p> L’url du lien permet aussi de conserver les valeurs des filtres lors de l’exploration, par exemple si on veut conserver la valeur du filtre sur la dimension « created_date » de la table « order_items » en l’affectant au filtre « Période » (du dashboard « customer_lookup ») : </p>
-<p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex57.png"/> </p>
+<p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex58.PNG"/> </p>
 <br/>
 <br/>
 
