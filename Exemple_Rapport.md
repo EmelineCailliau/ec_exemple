@@ -33,6 +33,7 @@
       <li> <a href="#3.4"> Partager le projet sur Git </a> </li>
       <li> <a href="#3.5"> Création de visualisations dans un Dashboard </a> </li>
       <li> <a href="#3.6"> Visualisation et modification du Dashboard </a> </li>
+      <li> <a href="#3.7"> Planifier l'envoi du dashboard </a> </li>
     </ol>
   </li>
   <li> <a href="#4"> Bon à savoir </a>
@@ -400,7 +401,7 @@ explore: order_items {       <i style="color:dodgerblue"> # vue inclue dans l’
 
 
 
-<h3 style="color:purple">  3.7. Planifier l’envoi du Dashboard </h3>
+<h3 style="color:purple" id="3.7">  3.7. Planifier l’envoi du Dashboard </h3>
 <p> Il est possible de planifier l’envoi d’une visualisation ou d’un Dashboard. On va planifier l’envoi du Dashboard tous les jours du lundi au vendredi à 9h : </p>
 
 <ul>
