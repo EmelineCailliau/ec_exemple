@@ -9,7 +9,7 @@
 <ol style="list-style-type : none">
   <li> <a href="#1"> Documents utiles </a>
     <ol>
-      <li> <a href="#1.1"> Documentation générales </a> </li>
+      <li> <a href="#1.1"> Documentation générale </a> </li>
       <li> <a href="#1.2"> Base de données de l’exemple </a> </li>
     </ol>
   </li>
@@ -67,7 +67,7 @@
           <li> <a href="#5.1.4"> Actions </a> </li>
         </ol>
       </li>
-      <li> <a href="#5.2"> Gérer l'accès aux modèles, esapces, données... </a>
+      <li> <a href="#5.2"> Gérer l'accès aux modèles, espaces, données... </a>
         <ol>
           <li> <a href="#5.2.1"> Limiter l'accès aux données </a> </li>
           <li> <a href="#5.2.2"> Limiter l'accès à un ou plusieurs modèles </a> </li>
@@ -605,7 +605,7 @@ Pour ajouter une ligne de référence (ou une ligne de tendance), aller dans le 
 <h3 style="color:purple" id="4.3">  4.3. Pour les administrateurs </h3>
 <h4>  &nbsp;&nbsp;&nbsp;&nbsp; - AJOUT D'UN UTILISATEUR : </h4>
 <p> Pour ajouter un nouvel utilisateur, aller dans l’onglet "Admin" → "Users" puis cliquer sur "Add User". Indiquer son adresse email, lui attribuer un ou plusieurs rôles et éventuellement l’ajouter à un ou plusieurs groupes d’utilisateurs.
-Il est possible à tout moment de modifier un utilisateur en allant dans "Admin" → "Users"  puis en cliquant sur "Edit" à droite de l’utilisateur. La modification permet de modifier des paramètres qui ne sont pas présent lors de l’ajout de l’utilisateur comme par exemple la valeur des attributs. </p>
+Il est possible à tout moment de modifier un utilisateur en allant dans "Admin" → "Users"  puis en cliquant sur "Edit" à droite de l’utilisateur. La modification permet de modifier des paramètres qui ne sont pas présents lors de l’ajout de l’utilisateur comme par exemple la valeur des attributs. </p>
 <br/>
 <br/>
 
@@ -637,7 +637,7 @@ Il est possible à tout moment de modifier un utilisateur en allant dans "Admin"
 
 <h4>  &nbsp;&nbsp;&nbsp;&nbsp; - DASHBOARDS INSTANTANNES : </h4>
 <p> Si les dashboards sont trop long à charger, on peut activer une option qui permet d’afficher les résultats du précédent rafraichissement du dashboard pendant l’exécution des requêtes. Les informations apparaissent donc instantanément sur le dashboard.
-Pour cela, aller dans l’onglet "Admin" → "Lab" puis activer l’option "Instant Dashboards".
+Pour cela, aller dans l’onglet "Admin" → "Lab" puis activer l’option "Instant Dashboards". <br/>
 Cette page contient d’autres fonctionnalités qu’on peut activer/désactiver. </p>
 <br/>
 <br/>
@@ -656,10 +656,10 @@ Au même endroit, on peut créer une palette de couleurs personnalisées, si la 
 
 <h3 style="color:purple" id="5.1">  5.1. Exploration des données </h3>
 <h4 style="color:plum" id="5.1.1">  5.1.1. Avec le paramètre "drill_fields" </h4>
-<p> Le paramètre "drill-fields" permet de gérer l’exploration des données pour une mesure ou une dimension. </p>
+<p> Le paramètre "drill_fields" permet de gérer l’exploration des données pour une mesure ou une dimension. </p>
 
 <ul>
-  <li> Ce paramètre est surtout utile pour les mesures de type "count" ou "count distinct" afin d’afficher les enregistrements qui composent une donnée.
+  <li> Ce paramètre est surtout utile pour les mesures de type "count" ou "count distinct" afin d’afficher les enregistrements qui composent une donnée. <br/>
   Exemple : Pour la mesure "count" dans la table "users" qui calcul le nombre d’utilisateurs :
   <p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex46.PNG"/> </p>
   ou si on compte utiliser cette liste de champs plusieurs fois, on peut créer une collection de champs :
@@ -667,8 +667,8 @@ Au même endroit, on peut créer une palette de couleurs personnalisées, si la 
   Si on clique sur une valeur de cette mesure dans cette visualisation, on obtient la liste des utilisateurs :
   <p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex48.PNG"/> </p>
   </li>
-  <li> Ce paramètre est surtout utilisé pour les dimensions qui possèdent une hiérarchie afin de remplacer la dimension par une autre dimension d’un niveau hiérarchique inférieur.
-  <p> Exemple : Si on représente le nombre d’utilisateurs par pays, on clique sur le pays "USA" pour l’explorer et on sélectionne "by State". On obtient une représentation du nombre d’utilisateurs par état pour les USA : </p>
+  <li> Ce paramètre est surtout utilisé pour les dimensions qui possèdent une hiérarchie afin d'explorer les données selon une dimension d’un niveau hiérarchique inférieur. <br/>
+  Exemple : Si on représente le nombre d’utilisateurs par pays, on clique sur le pays "USA" pour l’explorer et on sélectionne "by State". On obtient une représentation du nombre d’utilisateurs par état pour les USA :
   <p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex49.PNG"/> </p>
   </li>
 </ul>
@@ -683,7 +683,7 @@ Au même endroit, on peut créer une palette de couleurs personnalisées, si la 
 <br/>
 <br/>
 
-<h4 style="color:plum" id="5.1.3">  5.1.3. Lien </h4>
+<h4 style="color:plum" id="5.1.3">  5.1.3. Liens </h4>
 <p> Une autre façon d’explorer les données est d’insérer un lien vers un dashboard, une visualisation, un explore ou un lien extérieur à Looker.
 Pour cela, on peut utiliser le paramètre "link" : <a href="https://docs.Looker.com/reference/field-params/link"> https://docs.Looker.com/reference/field-params/link </a> </p>
 <p> Un exemple de lien vers un dashboard est présent dans la vue "02_users" du projet "welcome to Looker" pour la dimension "email" (ou encore dans la vue "04_product" pour la dimension "brand") : </p>
@@ -703,7 +703,7 @@ Documentation utile pour l’action "SendGrid" : <a href="https://docs.Looker.co
 
 
 <h3 style="color:purple" id="5.2">  5.2. Gérer l'accès aux modèles, esapces, données... </h3>
-<p> Les exemples sont ici présents à titre indicatif, le modèle qu’on a créé et utilisé jusqu’ici ne permet pas de tester les accès sur les centres de distributions. Vous pouvez les tester sur le projet "welcome to looker" mais veillez à tout effacer/supprimer les attributs utilisateurs, filtres d’accès, rôles… afin de ne pas encombrer Looker avec des choses inutiles et de ne pas bloquer les accès de certains utilisateurs. </p>
+<p> Les exemples sont ici présents à titre indicatif, le modèle qu’on a créé (en partie <a href="#3"> 3. </a>) et utilisé jusqu’ici ne permet pas de tester les accès sur les centres de distributions. Vous pouvez les tester sur le projet "welcome to looker" mais veillez à tout effacer/supprimer les attributs utilisateurs, filtres d’accès, rôles… afin de ne pas encombrer Looker avec des choses inutiles et de ne pas bloquer les accès de certains utilisateurs. </p>
 <br/>
 
 <h4 style="color:plum" id="5.2.1">  5.2.1. Limiter l'accès aux données </h4>
