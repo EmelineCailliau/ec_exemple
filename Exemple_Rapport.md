@@ -44,7 +44,7 @@
           <li> <a href="#4.2.2"> Les valeurs </a> </li>
           <li> <a href="#4.2.3"> Les tableaux </a> </li>
           <li> <a href="#4.2.4"> Les histogrammes (colonnes ou barres) </a> </li>
-          <li> <a href="#4.2.5"> Les diagrammes circulaires </a> </li>
+          <li> <a href="#4.2.5"> Les diagrammes circulaires ("Pie") </a> </li>
           <li> <a href="#4.2.6"> Les cartes </a> </li>
         </ol>
       </li>
@@ -57,13 +57,18 @@
         <ol>
           <li> <a href="#5.1.1"> Avec le paramètre "drill_fields"  </a> </li>
           <li> <a href="#5.1.2"> A partir d'une visualisation </a> </li>
-          <li> <a href="#5.1.3"> Bloquer ou limiter l’accès à son espace personnel </a> </li>
-          <li> <a href="#5.1.4"> Vérifier l’accès aux données d’un utilisateur </a> </li>
+          <li> <a href="#5.1.3"> Liens </a> </li>
+          <li> <a href="#5.1.4"> Actions </a> </li>
         </ol>
       </li>
-      <li> <a href="#5.2"> A partir d'une visualisation </a> </li>
-      <li> <a href="#5.3"> Liens </a> </li>
-      <li> <a href="#5.4"> Actions </a> </li>
+      <li> <a href="#5.2"> Gérer l'accès aux modèles, esapces, données... </a>
+        <ol>
+          <li> <a href="#5.2.1"> Limiter l'accès aux données </a> </li>
+          <li> <a href="#5.2.2"> Limiter l'accès à un ou plusieurs modèles </a> </li>
+          <li> <a href="#5.2.3"> Bloquer ou limiter l’accès à son espace personnel </a> </li>
+          <li> <a href="#5.2.4"> Vérifier l’accès aux données d’un utilisateur </a> </li>
+        </ol>
+      </li>
     </ol>
   </li>
 </ol>
@@ -670,10 +675,13 @@ Au même endroit, on peut créer une palette de couleurs personnalisées, si la 
 <br/>
 <br/>
 
-<h4 style="color:plum" id="5.1.2">  5.1.3. Lien </h4>
+<h4 style="color:plum" id="5.1.3">  5.1.3. Lien </h4>
 <p> Une autre façon d’explorer les données est d’insérer un lien vers un dashboard, une visualisation, un explore ou un lien extérieur à Looker.
-Pour cela, on peut utiliser le paramètre « link » : <a href="https://docs.Looker.com/reference/field-params/link"> https://docs.Looker.com/reference/field-params/link </a>
-Un exemple de lien vers un dashboard est présent dans la vue « 02_users » du projet « welcome to Looker » pour la dimension « email » ou encore dans la vue « 04_product » pour la dimension « brand ». </p>
+Pour cela, on peut utiliser le paramètre « link » : <a href="https://docs.Looker.com/reference/field-params/link"> https://docs.Looker.com/reference/field-params/link </a> </p>
+<p> Un exemple de lien vers un dashboard est présent dans la vue « 02_users » du projet « welcome to Looker » pour la dimension « email » (ou encore dans la vue « 04_product » pour la dimension « brand ») : </p>
+<p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex56.png"/> </p>
+<p> L’url du lien permet aussi de conserver les valeurs des filtres lors de l’exploration, par exemple si on veut conserver la valeur du filtre sur la dimension « created_date » de la table « order_items » en l’affectant au filtre « Période » (du dashboard « customer_lookup ») : </p>
+<p style="text-align:center"> <img src="https://raw.githubusercontent.com/EmelineCailliau/ec_exemple/master/Images/ex57.png"/> </p>
 <br/>
 <br/>
 
